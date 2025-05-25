@@ -3,301 +3,313 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Анализ рынка профессиональных фотостудий</title>
+    <title>Фотостудия - Бизнес-план, Управление и Вакансии</title>
     <style>
-        :root {
-            --primary: #6a5acd;
-            --secondary: #9370db;
-            --light: #f8f9fa;
-            --dark: #343a40;
-            --success: #28a745;
-        }
-        
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: Arial, sans-serif;
             line-height: 1.6;
-            color: var(--dark);
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-        }
-        
-        .container {
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
+            color: #333;
         }
-        
-        header {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
-            padding: 40px 0;
+        h1, h2 {
+            color: #2c3e50;
             text-align: center;
-            border-radius: 0 0 20px 20px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
         }
-        
-        h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        
-        .date {
-            font-style: italic;
-            opacity: 0.9;
-        }
-        
-        section {
-            background: white;
-            border-radius: 10px;
-            padding: 25px;
-            margin: 20px 0;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        }
-        
         h2 {
-            color: var(--primary);
-            border-bottom: 2px solid var(--secondary);
+            border-bottom: 2px solid #3498db;
             padding-bottom: 10px;
-            margin-top: 0;
+            text-align: left;
+            margin-top: 50px;
         }
-        
         h3 {
-            color: var(--secondary);
+            color: #2980b9;
         }
-        
-        table {
-            width: 100%;
-            border-collapse: collapse;
+        h4 {
+            color: #16a085;
+        }
+        .goal {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #3498db;
             margin: 20px 0;
         }
-        
-        th, td {
-            padding: 12px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-        
-        th {
-            background-color: var(--primary);
-            color: white;
-        }
-        
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-        
-        .swot-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-        
-        .swot-box {
-            border-radius: 8px;
+        .case {
+            background-color: #e8f4f8;
             padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
         }
-        
-        .strengths {
-            background-color: #e6f7ee;
-            border-left: 4px solid var(--success);
+        .vacancy {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        
-        .weaknesses {
-            background-color: #fff3e6;
-            border-left: 4px solid #ff9800;
+        .criteria {
+            font-weight: bold;
+            color: #e74c3c;
         }
-        
-        .opportunities {
-            background-color: #e6f3ff;
-            border-left: 4px solid #2196f3;
+        .vacancy-title {
+            color: #3498db;
+            margin-top: 0;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
         }
-        
-        .threats {
-            background-color: #ffebee;
-            border-left: 4px solid #f44336;
+        .salary {
+            font-weight: bold;
+            color: #e74c3c;
+            font-size: 1.1em;
         }
-        
-        .comparison-table {
-            overflow-x: auto;
+        .section-title {
+            color: #2c3e50;
+            margin-bottom: 5px;
         }
-        
+        ul, ol {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
         .highlight {
             background-color: #fffde7;
             padding: 2px 5px;
             border-radius: 3px;
+        }
+        .nav {
+            background-color: #f0f8ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .nav a {
+            margin: 0 10px;
+            color: #2980b9;
+            text-decoration: none;
             font-weight: bold;
         }
-        
-        .conclusion {
-            background-color: #e3f2fd;
-            border-left: 4px solid #2196f3;
-            padding: 20px;
-            border-radius: 8px;
-        }
-        
-        footer {
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-            color: #666;
-            font-size: 0.9rem;
+        .nav a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Анализ рынка</h1>
-        </div>
-    </header>
+    <h1>Фотостудия "Профессиональный кадр"</h1>
     
-    <div class="container">
-        <section>
-            <h2>1. Количество конкурентов</h2>
-            <p>Рынок насыщен, особенно в крупных городах. Основные конкуренты:</p>
-            <ul>
-                <li><strong>Крупные сети:</strong> Cross Studio (88 залов), Prostranstvo (20 залов), Wood Studios (16 залов)</li>
-                <li><strong>Нишевые студии:</strong> Детские (Векфото), автоматизированные фотокабины (PhotoGorki), студии для маркетплейсов (Vata Production, AF Studio)</li>
-                <li><strong>Франшизы:</strong> Polar Magic, CHIC CHIC, Verso (инвестиции от 98 000 ₽ до 750 000 ₽)</li>
-            </ul>
-            <p><strong>Вывод:</strong> Высокая конкуренция, но есть возможности в специализированных нишах (например, коммерческая съемка, AR-фото).</p>
-        </section>
+    <div class="nav">
+        <a href="#business">Бизнес-план</a>
+        <a href="#management">Кейсы управления</a>
+        <a href="#vacancies">Вакансии</a>
+    </div>
+
+    <h2 id="business">Бизнес-план фотостудии</h2>
+    
+    <h3>1. Помещение и запуск</h3>
+    <div class="goal">
+        <p><span class="criteria">Specific:</span> Арендовать помещение в центре Уфы (30–50 м²), оборудовать его 3 тематическими зонами и запустить рекламу в соцсетях.</p>
+        <p><span class="criteria">Measurable:</span> Привлечь 100 подписчиков в Instagram и 50 предварительных заявок до открытия.</p>
+        <p><span class="criteria">Attainable:</span> Бюджет на ремонт и оборудование — 500 000 руб., партнёрство с местными блогерами.</p>
+        <p><span class="criteria">Relevant:</span> Без помещения и первых клиентов проект не стартует.</p>
+        <p><span class="criteria">Time-bound:</span> Запуск студии — 1 сентября 2024 года.</p>
+    </div>
+
+    <h3>2. Набор команды</h3>
+    <div class="goal">
+        <p><span class="criteria">Specific:</span> Нанять 1 менеджера по продажам, 2 фотографов и помощника администратора.</p>
+        <p><span class="criteria">Measurable:</span> Провести 20 собеседований и закрыть вакансии за 3 недели.</p>
+        <p><span class="criteria">Attainable:</span> Зарплатный фонд — 150 000 руб./месяц.</p>
+        <p><span class="criteria">Relevant:</span> Команда нужна для работы с клиентами и съёмок.</p>
+        <p><span class="criteria">Time-bound:</span> Завершить набор до 15 августа 2024 года.</p>
+    </div>
+
+    <h3>3. Продвижение и первые продажи</h3>
+    <div class="goal">
+        <p><span class="criteria">Specific:</span> Провести 5 бесплатных фотосессий для блогеров, запустить таргетированную рекламу.</p>
+        <p><span class="criteria">Measurable:</span> Получить 20 платных заказов в первый месяц работы.</p>
+        <p><span class="criteria">Attainable:</span> Бюджет на маркетинг — 50 000 руб., участие в местных ивентах.</p>
+        <p><span class="criteria">Relevant:</span> Без узнаваемости не будет потока клиентов.</p>
+        <p><span class="criteria">Time-bound:</span> Рекламная кампания — с 1 по 30 сентября 2024 года.</p>
+    </div>
+
+    <h3>4. Финансовая устойчивость</h3>
+    <div class="goal">
+        <p><span class="criteria">Specific:</span> Выйти на окупаемость (чистая прибыль 50 000 руб./месяц).</p>
+        <p><span class="criteria">Measurable:</span> Ежемесячный доход от 200 000 руб., 30% маржинальность.</p>
+        <p><span class="criteria">Attainable:</span> Средний чек — 5 000 руб., 40 заказов/месяц.</p>
+        <p><span class="criteria">Relevant:</span> Без прибыли проект нежизнеспособен.</p>
+        <p><span class="criteria">Time-bound:</span> Достичь к 1 декабря 2024 года.</p>
+    </div>
+
+    <h2 id="management">Кейсы управления персоналом</h2>
+
+    <div class="case">
+        <h3>Кейс №1. Обратная связь для сотрудника с упавшей эффективностью</h3>
+        <p><strong>Цель:</strong> Помочь сотруднику вернуться к продуктивной работе, выяснить причины спада и предложить поддержку.</p>
         
-        <section>
-            <h2>2. SWOT-анализ конкурентов</h2>
-            <div class="swot-container">
-                <div class="swot-box strengths">
-                    <h3>Сильные стороны (S)</h3>
-                    <ul>
-                        <li>Узнаваемость бренда (Cross Studio)</li>
-                        <li>Широкий ассортимент залов</li>
-                        <li>Франшизы с поддержкой (обучение, CRM)</li>
-                    </ul>
-                </div>
-                <div class="swot-box weaknesses">
-                    <h3>Слабые стороны (W)</h3>
-                    <ul>
-                        <li>Высокие цены (до 19 000 ₽/час)</li>
-                        <li>Ограниченный сервис (например, нет визажиста)</li>
-                        <li>Низкая гибкость (стандартные пакеты)</li>
-                    </ul>
-                </div>
-                <div class="swot-box opportunities">
-                    <h3>Возможности (O)</h3>
-                    <ul>
-                        <li>Рост спроса на контент для соцсетей</li>
-                        <li>Внедрение AI-ретуши и VR-фото</li>
-                    </ul>
-                </div>
-                <div class="swot-box threats">
-                    <h3>Угрозы (T)</h3>
-                    <ul>
-                        <li>Уход клиентов к частным фотографам</li>
-                        <li>Экономическая нестабильность</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+        <h4>Сценарий разговора:</h4>
+        <p><strong>Начало беседы (нейтральное, поддерживающее):</strong></p>
+        <p class="highlight">«[Имя], я ценю твой вклад в команду, и мне важно, чтобы у нас была возможность обсудить текущую ситуацию. Заметил, что в последнее время ты выглядишь уставшим, и результаты немного снизились. Как ты сам это оцениваешь?»</p>
         
-        <section>
-            <h2>3. SWOT-анализ вашего стартапа</h2>
-            <div class="swot-container">
-                <div class="swot-box strengths">
-                    <h3>Сильные стороны (S)</h3>
-                    <ul>
-                        <li>Уникальная концепция (гибрид студии и ивент-площадки)</li>
-                        <li>Гибкие тарифы (скидки на ночные съемки)</li>
-                    </ul>
-                </div>
-                <div class="swot-box weaknesses">
-                    <h3>Слабые стороны (W)</h3>
-                    <ul>
-                        <li>Недостаток узнаваемости</li>
-                        <li>Ограниченный бюджет на маркетинг</li>
-                    </ul>
-                </div>
-                <div class="swot-box opportunities">
-                    <h3>Возможности (O)</h3>
-                    <ul>
-                        <li>Партнерство с блогерами и маркетплейсами</li>
-                        <li>Тренд на "фото как опыт" (тематические декорации)</li>
-                    </ul>
-                </div>
-                <div class="swot-box threats">
-                    <h3>Угрозы (T)</h3>
-                    <ul>
-                        <li>Конкуренция с франшизами</li>
-                        <li>Риск технологического устаревания</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+        <p><strong>Активное слушание:</strong></p>
+        <p>Дать сотруднику выговориться, не перебивая. Если он не упоминает ДТП или зарплату, мягко подвести к этому:</p>
+        <p class="highlight">«Коллеги mentioned, что у тебя были сложности с машиной. Это могло повлиять на твоё состояние?»</p>
+        <p class="highlight">«Раньше ты говорил о зарплате. Хочешь обсудить это сейчас?»</p>
         
-        <section>
-            <h2>4. Сравнение с конкурентами</h2>
-            <div class="comparison-table">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Критерий</th>
-                            <th>Ваш стартап</th>
-                            <th>Конкуренты</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Цена</strong></td>
-                            <td>Средняя (1 500–3 000 ₽/час)</td>
-                            <td>От 200 ₽ (эконом) до 19 000 ₽ (премиум)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Качество</strong></td>
-                            <td>Профессиональное оборудование + AI-обработка</td>
-                            <td>Разное (от бюджетного до high-end)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Функционал</strong></td>
-                            <td>Доп. услуги (визаж, аренда костюмов)</td>
-                            <td>Часто ограничены съемкой</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
+        <p><strong>Обратная связь по фактам (без обвинений):</strong></p>
+        <p class="highlight">«Я также получил пару жалоб от клиентов — для тебя это нехарактерно. Давай разберёмся, что произошло».</p>
+        <p class="highlight">«Опаздывать и конфликты с коллегами — это не твой обычный стиль. Как думаешь, что изменилось?»</p>
         
-        <section>
-            <h2>5. Способы борьбы с конкуренцией</h2>
-            <ol>
-                <li><strong>Уникальное позиционирование:</strong>
-                    <ul>
-                        <li>Тематические залы</li>
-                        <li>Пакеты "всё включено"</li>
-                    </ul>
-                </li>
-                <li><strong>Продвижение:</strong>
-                    <ul>
-                        <li>Таргетированная реклама для узких аудиторий</li>
-                        <li>Коллаборации</li>
-                    </ul>
-                </li>
-                <li><strong>Технологии:</strong>
-                    <ul>
-                        <li>Внедрение AI</li>
-                    </ul>
-                </li>
-                <li><strong>Лояльность:</strong>
-                    <ul>
-                        <li>Накопительные скидки, подарочные сертификаты</li>
-                    </ul>
-                </li>
-            </ol>
-        </section>
+        <p><strong>Предложение поддержки:</strong></p>
+        <ul>
+            <li>Если причина — ДТП: «Могу предложить гибкий график на неделю, чтобы ты пришёл в себя».</li>
+            <li>Если зарплата: «Давай обсудим твои ожидания и план роста в следующем квартале».</li>
+            <li>«Как я могу помочь тебе вернуться в прежний ритм?»</li>
+        </ul>
         
-        <section class="conclusion">
-            <h2>Заключение</h2>
-            <p>Рынок фотостудий перспективен, но требует четкой специализации и инноваций. Ваши козыри — гибкость, технологичность и клиентоориентированность.</p>
-        </section>
+        <p><strong>Договорённости:</strong></p>
+        <p class="highlight">«Давай договоримся: в течение недели избегаем опозданий, а клиентов берём под особый контроль. Через 7 дней встретимся и оценим прогресс».</p>
+        
+        <p><strong>Важно:</strong> Избегать давления. Показать, что компания на его стороне.</p>
+    </div>
+
+    <div class="case">
+        <h3>Кейс №2. Обратная связь для сотрудника со «звёздной болезнью»</h3>
+        <p><strong>Цель:</strong> Сохранить мотивацию, но скорректировать поведение, которое вредит команде.</p>
+        
+        <h4>Сценарий разговора:</h4>
+        <p><strong>Начало с похвалы:</strong></p>
+        <p class="highlight">«[Имя], твои результаты в последнем квартале — просто огонь! Команда и клиенты это ценят. Именно поэтому я хочу обсудить кое-что важное».</p>
+        
+        <p><strong>Конкретные примеры поведения:</strong></p>
+        <p class="highlight">«Заметил, что ты стал чаще опаздывать и задерживаться с обеда. Это не похоже на тебя — раньше ты был примером пунктуальности».</p>
+        <p class="highlight">«Коллеги отмечают, что твои комментарии иногда звучат снисходительно. Например, вчера на планерке...» (привести факт).</p>
+        
+        <p><strong>Объяснение последствий:</strong></p>
+        <p class="highlight">«Когда ты опаздываешь, это сбивает график всей команды. А тон общения может демотивировать коллег».</p>
+        
+        <p><strong>Запрос на изменение:</strong></p>
+        <p class="highlight">«Давай договоримся: график — строго по правилам, а feedback коллегам даём в формате "совет", а не "указание"».</p>
+        
+        <p><strong>Поддержка амбиций:</strong></p>
+        <p class="highlight">«Ты — наш топ-перформер, и я хочу, чтобы ты рос дальше. Но лидеру важно сохранять уважение команды».</p>
+        
+        <p><strong>Финал:</strong> «Через 2 недели обсудим, как идут изменения. Я уверен, у тебя получится!»</p>
+    </div>
+
+    <div class="case">
+        <h3>Кейс №3. Конфликт руководителя отдела и тим-лида</h3>
+        <p><strong>Профилактика:</strong></p>
+        <ul>
+            <li>Чёткое распределение зон ответственности до старта проекта.</li>
+            <li>Регулярные sync-встречи для согласования ожиданий.</li>
+        </ul>
+        
+        <p><strong>Решение сейчас:</strong></p>
+        <ul>
+            <li>Медиация: Провести встречу с нейтральным модератором (HR).</li>
+            <li>Фокус на фактах: Разобрать конкретные кейсы конфликтов, а не личности.</li>
+            <li>Компромисс: Например: «Тим-лид отвечает за технические решения, руководитель — за сроки и бюджет».</li>
+        </ul>
+    </div>
+
+    <div class="case">
+        <h3>Кейс №4. Спор двух разработчиков</h3>
+        <p><strong>Алгоритм выбора:</strong></p>
+        <ol>
+            <li><strong>Критерии:</strong> Оценить оба решения по:
+                <ul>
+                    <li>Времени реализации.</li>
+                    <li>Масштабируемости.</li>
+                    <li>Рискам.</li>
+                </ul>
+            </li>
+            <li><strong>Экспертиза:</strong> Привлечь старшего разработчика или архитектора для оценки.</li>
+            <li><strong>Тест:</strong> Если спор неубедителен, реализовать оба варианта в тестовом режиме.</li>
+        </ol>
+        
+        <p><strong>Фраза для команды:</strong></p>
+        <p class="highlight">«Давайте протестируем оба подхода на модуле X и выберем лучший на основе данных».</p>
+        
+        <p><strong>Важно:</strong> Подчеркнуть, что оба мнения ценны, и решение — общее.</p>
+    </div>
+
+    <h2 id="vacancies">Вакансии в фотостудии</h2>
+    
+    <div class="vacancy">
+        <h3 class="vacancy-title">Менеджер фотостудии</h3>
+        <p><span class="salary">Зарплата:</span> от 50 000 руб. + бонусы</p>
+        <p><strong>График:</strong> 5/2, возможен гибкий график</p>
+        <p><strong>Требуемый опыт работы:</strong> не важен</p>
+        
+        <h4 class="section-title">Плюсы:</h4>
+        <ul>
+            <li>Работа в творческой атмосфере.</li>
+            <li>Обучение и поддержка от команды.</li>
+            <li>Возможность роста до старшего менеджера.</li>
+        </ul>
+        
+        <h4 class="section-title">Обязанности:</h4>
+        <ul>
+            <li>Консультация клиентов по услугам фотостудии.</li>
+            <li>Продажа фотосессий, пакетов и дополнительных услуг.</li>
+            <li>Ведение записей и организация съёмочного процесса.</li>
+            <li>Помощь в продвижении студии в соцсетях.</li>
+        </ul>
+        
+        <h4 class="section-title">Требования:</h4>
+        <ul>
+            <li>Коммуникабельность и доброжелательность.</li>
+            <li>Готовность обучаться.</li>
+            <li>Базовые знания соцсетей (Instagram, ВКонтакте).</li>
+        </ul>
+        
+        <h4 class="section-title">Условия:</h4>
+        <ul>
+            <li>Официальное трудоустройство.</li>
+            <li>Премии за выполнение плана.</li>
+            <li>Скидки на фотоуслуги для себя и друзей.</li>
+        </ul>
+    </div>
+    
+    <div class="vacancy">
+        <h3 class="vacancy-title">Помощник фотографа / Администратор</h3>
+        <p><span class="salary">Зарплата:</span> от 30 000 руб. + бонусы</p>
+        <p><strong>График:</strong> сменный (подходит для студентов)</p>
+        <p><strong>Требуемый опыт работы:</strong> не требуется</p>
+        
+        <h4 class="section-title">Плюсы:</h4>
+        <ul>
+            <li>Отличный старт в индустрии.</li>
+            <li>Практика работы с профессиональной техникой.</li>
+        </ul>
+        
+        <h4 class="section-title">Обязанности:</h4>
+        <ul>
+            <li>Подготовка студии к съёмкам (свет, реквизит, уборка).</li>
+            <li>Встреча клиентов и помощь фотографу.</li>
+            <li>Контроль за порядком в зале.</li>
+        </ul>
+        
+        <h4 class="section-title">Требования:</h4>
+        <ul>
+            <li>Ответственность и аккуратность.</li>
+            <li>Желание развиваться в фотографии.</li>
+        </ul>
+        
+        <h4 class="section-title">Условия:</h4>
+        <ul>
+            <li>Гибкий график.</li>
+            <li>Обучение ретуши и основам съёмки.</li>
+            <li>Возможность стать фотографом через 6 месяцев.</li>
+        </ul>
+    </div>
+    
+    <div class="highlight">
+        <p>Если вас заинтересовала одна из наших вакансий, отправляйте резюме на email: <strong>hr@fotostudio.ru</strong> или звоните по телефону: <strong>+7 (123) 456-78-90</strong>.</p>
     </div>
 </body>
 </html>
